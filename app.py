@@ -12,10 +12,11 @@ AUTH.mkdir(exist_ok=True)
 STORAGE = AUTH / "storage_state.json"
 MASTER = AUTH / "master_token.json"
 
-if not STORAGE.exists():
-    STORAGE.write_text(st.secrets["storage_state"], encoding="utf-8")
-    MASTER.write_text(st.secrets["master_token"], encoding="utf-8")
+import base64
 
+if not STORAGE.exists():
+    STORAGE.write_bytes(base64.b64decode(st.secrets["storage_state_b64"]))
+    MASTER.write_bytes(base64.b64decode(st.secrets["master_token_b64"]))
 from notebooklm import NotebookLMClient
 
 NOTEBOOKS = {
