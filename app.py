@@ -25,42 +25,62 @@ html, body, [class*="css"] {
 .block-container {padding-top: 2.2rem; max-width: 50rem;}
 
 .hdr {
-  border-bottom: 2px solid #1b2a41;
-  padding-bottom: 0.9rem;
-  margin-bottom: 1.6rem;
+  border-bottom: 2px solid rgba(128,128,128,0.45);
+  padding-bottom: 1rem;
+  margin-bottom: 1.8rem;
 }
 .hdr h1 {
-  font-size: 1.45rem; font-weight: 700; color: #1b2a41;
-  margin: 0; letter-spacing: -0.02em;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
 }
 .hdr .sub {
-  font-size: 0.8rem; color: #5a6675; margin-top: 0.35rem;
-  letter-spacing: 0.01em;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  margin-top: 0.5rem;
 }
 
 .meta {
-  font-size: 0.75rem; color: #6b7684;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  opacity: 0.75;
   font-variant-numeric: tabular-nums;
-  padding: 0.15rem 0 0.6rem 0;
-  border-bottom: 1px solid #e5e8ec; margin-bottom: 0.8rem;
+  padding: 0.15rem 0 0.7rem 0;
+  border-bottom: 1px solid rgba(128,128,128,0.3);
+  margin-bottom: 0.9rem;
 }
 .lane {
-  font-size: 0.95rem; font-weight: 700; color: #1b2a41;
-  margin-bottom: 0.1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.15rem;
 }
 .note {
-  font-size: 0.78rem; color: #6b7684; line-height: 1.6;
+  font-size: 0.88rem;
+  color: var(--text-color);
+  opacity: 0.75;
+  line-height: 1.7;
 }
-.rule {border-top: 1px solid #e5e8ec; margin: 1.8rem 0 1rem 0;}
+.rule {
+  border-top: 1px solid rgba(128,128,128,0.3);
+  margin: 1.8rem 0 1rem 0;
+}
 
 .stButton > button {
-  border-radius: 2px; font-weight: 600; letter-spacing: 0.01em;
+  border-radius: 2px;
+  font-weight: 600;
 }
 .stTabs [data-baseweb="tab"] {
-  font-weight: 600; font-size: 0.9rem;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 div[data-testid="stExpander"] details {
-  border: 1px solid #dfe3e8; border-radius: 2px;
+  border: 1px solid rgba(128,128,128,0.3);
+  border-radius: 2px;
 }
 </style>
 """
