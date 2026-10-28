@@ -1,0 +1,2 @@
+streamlit
+notebooklm-py[android]
